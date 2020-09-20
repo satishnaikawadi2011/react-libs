@@ -1,0 +1,23 @@
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+const colors = {
+	primary   : 'orange',
+	secondary : 'pink'
+};
+const darkTheme = {
+	backgroundColor : 'black',
+	color           : 'white',
+    colors
+};
+
+const lightTheme = { backgroundColor: 'white', color: '#00000',colors };
+const GlobalStyles = createGlobalStyle`
+	body{
+		background-color:${(props) => props.theme.backgroundColor};
+		color:${(props) => props.theme.color}
+	}
+`;
+
+
+			<ThemeProvider theme={darkTheme}>
+				<GlobalStyles />
+                </ThemeProvider>

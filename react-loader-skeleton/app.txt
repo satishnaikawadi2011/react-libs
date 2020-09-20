@@ -1,0 +1,22 @@
+				
+                import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+                TODO: For light theme
+                <SkeletonTheme highlightColor="#E3E3E3">
+					{' '}
+					<div style={{ display: 'flex', flexDirection: 'column', marginTop: 100 }}>
+						<Skeleton circle={true} count={4} height={50} duration={1} width={50} />
+						<Skeleton height={10} width={200} count={1} duration={1} />
+						<Skeleton height={10} width={200} count={1} duration={1} />
+						<Skeleton height={10} width={200} count={1} duration={1} />
+					</div>
+                </SkeletonTheme>
+                    TODO: Dark Theme
+                	<SkeletonTheme highlightColor="#3C3C3C" color="#4A4A4A">
+					{' '}
+					<div style={{ display: 'flex', flexDirection: 'column', marginTop: 100 }}>
+						<Skeleton circle={true} count={4} height={50} duration={1} width={50} />
+						<Skeleton height={10} width={200} count={1} duration={1} />
+						<Skeleton height={10} width={200} count={1} duration={1} />
+						<Skeleton height={10} width={200} count={1} duration={1} />
+					</div>
+				</SkeletonTheme>
